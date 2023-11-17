@@ -1,28 +1,275 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Portafolio Luis Burbano</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+  <link rel="stylesheet" href="css/materialize.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Luis Burbano</title>
 </head>
+
 <body>
-    <div class="navbar">
-        <nav>
-            <div class="nav-wrapper">
-              <a href="#!" class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
-              <ul class="right hide-on-med-and-down">
-                <li><a href="#"><i class="material-icons left">search</i>Busqueda</a></li>
-                <li><a href="#"><i class="material-icons">view_module</i></a></li>
-                <li><a href="#"><i class="material-icons">refresh</i></a></li>
-                <li><a href="#"><i class="material-icons">more_vert</i></a></li>
-              </ul>
-            </div>
-          </nav>
+  <div class="navbar">
+    <nav class="nav-wrapper grey darken-4">
+      <div class="container ">
+        <a href="#!" class="brand-logo"><i class="material-icons">cases</i>Portafolio</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a href="#landing"><i class="material-icons left">home</i>Inicio</a>
+          </li>
+          <li>
+            <a href="#about"><i class="material-icons left">account_circle</i>Sobre Mí</a>
+          </li>
+          <li>
+            <a href="#skills"><i class="material-icons left">card_travel</i>Habilidades</a>
+          </li>
+          <li>
+            <a href="#proyects"><i class="material-icons left">data_exploration</i>Proyectos</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="material-icons left">call</i>Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <a href="#landing"><i class="material-icons left">home</i>Inicio</a>
+      </li>
+      <li>
+        <a href="#about"><i class="material-icons left">account_circle</i>Sobre Mí</a>
+      </li>
+      <li>
+        <a href="#skills"><i class="material-icons left">card_travel</i>Habilidades</a>
+      </li>
+      <li>
+        <a href="#proyects"><i class="material-icons left">data_exploration</i>Proyectos</a>
+      </li>
+      <li>
+        <a href="#contact"><i class="material-icons left">call</i>Contacto</a>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="section" id="landing">
+    <h5 id="mainText" class="center">Mi nombre es</h5>
+    <h1 style="color: white;" class="center">
+      LUIS <b>BURBANO</b>
+    </h1>
+    <h6 id="mainText" class="center">Estudiante de Ingeniería en Software ESPE</h6>
+  </div>
+  <!-- sobre mi -->
+  <div class="section about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <img src="img/perfil.png" alt="" class="responsive-img" />
+        </div>
+        <div class="col s12 m6">
+          <h2 class="center">Sobre Mí</h2>
+          <p>
+            Soy estudiante de Ingeniería en Software en la ESPE, me gusta
+            programar y aprender nuevas
+            tecnologias, domino los lenguajes de C++, JavaScript, Java y actualmente me encuentro aprendiendo
+            C#. He realizo proyectos en cada uno de estos lenguajes, los cuales se encuentran en mi portafolio.
+          </p>
+        </div>
+      </div>
     </div>
-    <script src="js/materialize.min.js"></script>
+
+    <!-- Habilidades -->
+    <div class="skills grey darken-4" id="skills">
+      <div class="container">
+        <div class="row">
+          <h1 class="center">
+            Mis Habilidades
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col s6 m6 l3">
+            <img class="responsive-img" src="img/c++.png">
+          </div>
+          <div class="col s6 m6 l3">
+            <img class="responsive-img" src="img/javascript.png">
+          </div>
+          <div class="col s6 m6 l3">
+            <img class="responsive-img" src="img/java.png">
+          </div>
+          <div class="col s6 m6 l3">
+            <img class="responsive-img" src="img/csharp.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proyectos -->
+    <div class="proyects" id="proyects">
+      <div class="row">
+        <h1 class="center">
+          Mis Proyectos
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col s12 m7 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/tecnologia.jpg">
+              <span class="card-title">Techology</span>
+            </div>
+            <div class="card-content">
+              <p>Este proyecto consiste en una tienda en linea de productos tecnologicos, enfocada en la velocidad y la
+                simplicidad de uso para el usuario, con contacto mediante correo electrónico.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m7 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/rol.jpg">
+              <span class="card-title">Rol de pagos</span>
+            </div>
+            <div class="card-content">
+              <p>Este proyecto se enfocó en un sistema de roles de pagos tener control sobre los empleados ademas del
+                sueldo a pagar y las multas por cobrar, teniendo como resultado final
+                el suelo final a dar a cada empleado.</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="col s12 m7 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/estilista.jpg">
+              <span class="card-title">Styles by Irelia</span>
+            </div>
+            <div class="card-content">
+              <p>El proyecto se enfocó en un sistema de control de pagos para una tienda estética, donde se tenia el
+                control de inventario, además de la cantidad a pagar a cada empleado
+                segun el servicio dado.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contacto -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <h1 class="center">
+            Contacto
+          </h1>
+        </div>
+        <div class="row">
+          <div class="col s12 m6 l6">
+            <form action="">
+              <div class="input-field">
+                <input type="text" id="name" />
+                <label for="name">Nombre</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" />
+                <label for="email">Correo</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="subject" />
+                <label for="subject">Asunto</label>
+              </div>
+              <div class="input-field">
+                <textarea id="message" class="materialize-textarea"></textarea>
+                <label for="message">Mensaje</label>
+              </div>
+              <div class="input-field center">
+                <button class="btn grey darken-4" onclick="submitForm()">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col s12 m6 l6">
+            <div class="card grey darken-4 card-contact">
+              <div class="card-content">
+                <span class="card-title">Información de Contacto</span>
+                <p>
+                  <i class="material-icons">email</i>&nbsp;&nbsp;laburbano1@espe.edu.ec
+                </p>
+              </div>
+              <div class="card-action">
+                <p>
+                  <i class="material-icons">call</i>&nbsp;&nbsp;0983272037
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Structure -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <h4>Datos del Formulario</h4>
+          <p id="modalContent"></p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <footer class="page-footer grey darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Sigueme en mis redes</h5>
+                <p class="grey-text text-lighten-4">Puedes seguirme en mis redes sociales, ahí publicaré actualizaciones
+                  sobre mi trabajo y nuevos proyectos.
+                </p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Redes Sociales</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/luis.burbano.902"><i
+                        class="material-icons left">facebook</i>Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://twitter.com/luisburbano13"><i
+                        class="material-icons left">close</i>Twitter/X</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+              © 2023 Copyright
+              <a class="grey-text text-lighten-4 right modal-trigger" href="#modal1">&nbsp;&nbsp;&nbsp;</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Easter Egg </h4>
+          <p>Este es un easter egg, si lo encontraste, felicidades, te ganaste un premio.</p>
+          <img src="img/e1.jpg" alt="" class="materialboxed" width="100%">
+        </div>
+        <div class="modal-footer">
+
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Genial!</a>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="js/main.js"></script>
 </body>
+
 </html>
